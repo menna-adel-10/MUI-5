@@ -25,7 +25,8 @@ const Sidebar = () => {
           p={2}
           sx={{ display: { xs: "none", sm: "block" } }}
       >
-           <List>
+          <Box position="fixed">
+              <List>
       {items.map((item, index) => (
         <ListItem key={index} disablePadding>
           <ListItemButton component="a" href={item.link}>
@@ -48,6 +49,7 @@ const Sidebar = () => {
         />
       </ListItem>
     </List>
+           </Box>
       </Box>
   )
 }
