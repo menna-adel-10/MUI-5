@@ -20,7 +20,7 @@ const Rightbar = () => {
           <Avatar alt="Agnes Walker" src="https://material-ui.com/static/images/avatar/4.jpg" />
           <Avatar alt="Trevor Henderson" src="https://material-ui.com/static/images/avatar/5.jpg" />
         </AvatarGroup> 
-        <Typography variant="h6" fontWeight={100}>
+        <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
           Latest Photos
         </Typography>
         <ImageList cols={3} rowHeight={100} gap={5}>
