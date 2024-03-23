@@ -1,13 +1,5 @@
-import Box from '@mui/material/Box'
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { CheckBox, ShareIcon, MoreVert, Favorite, FavoriteBorder } from '@mui/icons-material';
+import {Box, Card, CardHeader, Typography, IconButton, CardMedia, CardContent, CardActions, Avatar, } from '@mui/material'
+import { CheckBox, Share, MoreVert, Favorite, FavoriteBorder } from '@mui/icons-material';
 
 
 const Feed = () => {
@@ -16,7 +8,7 @@ const Feed = () => {
       <Card>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "blue" }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "limegreen" }} aria-label="recipe">
             R
           </Avatar>
         }
@@ -30,8 +22,9 @@ const Feed = () => {
       />
       <CardMedia
         component="img"
-        height="20%"
-        image="https://images.pexels.com/photos/7780260/pexels-photo-7780260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          height="20%"
+          width="100%"
+        image="https://images.pexels.com/photos/13302778/pexels-photo-13302778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="Paella dish"
       />
       <CardContent>
@@ -46,7 +39,7 @@ const Feed = () => {
           <CheckBox icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
         </IconButton>
         <IconButton aria-label="share">
-          <ShareIcon />
+          <Share />
         </IconButton>
       </CardActions>
     </Card>
